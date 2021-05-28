@@ -1,0 +1,1 @@
+# Mynotes-clear-js-project

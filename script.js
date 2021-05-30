@@ -161,7 +161,7 @@ cleanBtn.addEventListener('click', () => {
 
 // delete notes
 const deleteAll = () => {
-    const elistElements = document.querySelectorAll('li');
+    const elistElements = document.querySelectorAll('.note');
     elistElements.forEach(el => {
         el.remove();
     });

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+
+    <script src="https://kit.fontawesome.com/a05a38bd01.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="navigation-container">
+        <h1><i class="far fa-sticky-note"></i> MyNotes</h1>
+        <div class="buttons-nav">
+            <i class="fas fa-info info"></i>
+            <button class="add-button"><i class="fas fa-plus-circle plus-icon"></i> Add</button>
+            <button class="delete-button"><i class="fas fa-trash delete-icon"></i> Delete all</button>
+        </div>
+    </div>
+
+    <ul class="note-container"></ul>
+    
+    <div class="shadow1"> 
+        <div class="wrapper">
+            <div class="header">
+                <h2>Add Note</h2>
+            </div>
+            
+            <div class="menu">
+                <label for="choice-input">Choice category</label>
+                <select name="choice" id="choice-input" >  
+                    <option value="category" name="category" disabled selected>category</option>  
+                    <option value="shopping" name="shopping">shopping</option>                       
+                    <option value="work" name="work">work</option>``
+                    <option value="other" name="other">other</option>
+                </select>
+    
+                <p class="text-note ">Add text</p>
+                <textarea class="inputText" name="Text1" cols="40" rows="3"></textarea>
+                <button class="button-clean"><i class="fas fa-snowplow clean-icon"></i>Clear text</button>
+                
+                <p class="error ">error</p>
+    
+                <div class="buttons-menu">
+                    <button class="button-save"><i class="far fa-save save-icon"></i> Save</button>
+                    <button class="button-close"><i class="far fa-window-close close-icon"></i> Cancel</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="shadow2">
+        <div class="instruction-container">
+            <ul class="instruction-header">
+                <h3>Head buttons</h3>
+                <li class="list-elem"><p><i class="fas fa-plus-circle plus-icon"></i> Add new Note</p></li>
+                <li class="list-elem"><p><i class="fas fa-trash delete-icon"></i> Delete all notes</p></li>
+            </ul>
+            <ul class="instruction-menu">
+                <h3>Menu Elements</h3>
+                <li class="list-elem"><p><i class="far fa-save save-icon"></i> Save the contents of the note</p></li>
+                <li class="list-elem"><p><i class="far fa-window-close close-icon"></i> Close window</p></li>
+                <li class="list-elem"><p>You can choose type of note</p></li>
+            </ul>
+            <ul class="instruction-notes">
+                <h3>Notes</h3>
+                <li class="list-elem"><p>X delete this note</p></li>
+                <li class="list-elem"><p>You can expand your notes and edit them</p></li>
+                <li class="list-elem"><p class="leave"><i class="fas fa-bullhorn"></i> Click on shadow to leave</p></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
